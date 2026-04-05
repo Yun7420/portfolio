@@ -19,6 +19,7 @@ export const personal = {
     'React',
     'Vue.js',
     'Flutter',
+    'Dart',
   ],
   links: {
     github: 'https://github.com/Yun7420',
@@ -45,12 +46,21 @@ export const jobs: Job[] = [
     period: '2024.02 — 재직 중',
     location: '인천',
     summary:
-      '웹 서비스 및 모바일 앱 구축, 기능 개발·유지보수, 코드 리팩토링·마이그레이션 및 서비스 개선.',
+      '웹 서비스 및 모바일 앱 구축, 기능 개발·유지보수와 함께 코드 리팩토링, 마이그레이션 및 서비스 개선 수행.',
     highlights: [
-      'Next.js·React 기반 웹 서비스 구축 및 유지보수, Feature 기반 아키텍처·Barrel Export·Path Alias로 구조 정리',
-      'React Query·Recoil·Jotai 기반 상태 관리, i18n 다국어, Axios Interceptor 인증·토큰 갱신',
-      'Vue·Ionic·Capacitor 하이브리드 앱: FCM 푸시, Apple·Kakao·Naver·NICE 로그인, 딥링크·권한 플로우',
-      'Play Store·App Store 심사 대응 및 출시',
+      '[웹] Next.js·React 기반 웹 서비스 구축·기능 개발·유지보수',
+      '[웹] 코드 리팩토링·마이그레이션으로 코드 품질·유지보수성 향상',
+      '[웹] React Query / Recoil / Jotai 기반 상태 관리 구조 설계·개선',
+      '[웹] i18n 기반 다국어 시스템 도입',
+      '[웹] Axios Interceptor 기반 인증 처리 구조 구현',
+      '[하이브리드] Vue·Ionic·Capacitor 기반 모바일 앱 기능 개발·유지보수',
+      '[하이브리드] FCM 푸시 — Device Token 기반 Foreground·Background 알림 처리',
+      '[하이브리드] Apple·Kakao·Naver 소셜 로그인 및 NICE 일반 로그인, 딥링크 인증',
+      '[하이브리드] 앱 실행 시 권한 요청·디바이스 설정 권한 화면 이동',
+      '[하이브리드] Google Play·Apple App Store 심사 대응 및 서비스 출시',
+      '[Flutter] Flutter 기반 모바일 앱 개발·유지보수 및 서비스 운영 대응',
+      '[Flutter] GitHub Actions CI/CD 자동 배포 및 OTA 업데이트 시스템 구축·운영',
+      '[Flutter] Bluetooth 디바이스 연동 및 TTS 음성 안내 기능 구현',
     ],
   },
   {
@@ -65,7 +75,6 @@ export const jobs: Job[] = [
       'Photoshop·Illustrator·Figma로 UI/UX 디자인·시안 제작',
       'Git/GitHub 협업 환경에서 서비스 구축·유지보수',
     ],
-   
   },
 ]
 
@@ -158,6 +167,50 @@ export const projects: Project[] = [
         title: '스토어',
         bullets: [
           'Google Play·App Store 심사 리젝 대응 및 정식 출시',
+        ],
+      },
+    ],
+  },
+  {
+    name: '미란다',
+    subtitle: 'Miranda',
+    client: '㈜리얼타임메디체크',
+    period: '2023.07 — 현재 (약 2년 2개월)',
+    role:
+      'Flutter 기반 앱 개발 및 배포·업데이트 시스템 구축, 독립적인 모바일 앱 서비스 운영 및 배포 자동화 환경 구축',
+    stack: [
+      { label: 'Framework', value: 'Flutter' },
+      { label: 'Language', value: 'Dart' },
+      { label: 'State Management', value: 'Provider, GetX' },
+      { label: 'Network', value: 'Dio, HTTP' },
+      { label: 'Device', value: 'Bluetooth, USB Serial' },
+      { label: 'Storage', value: 'SharedPreferences, SecureStorage' },
+    ],
+    achievements: [
+      {
+        title: 'CI/CD 자동 배포 시스템 구축',
+        bullets: [
+          'GitHub Actions 기반 Flutter 앱 CI/CD 파이프라인 구축',
+          'Tag 기반(v*) 트리거로 APK·AAB 자동 빌드 및 GitHub Release 자동 배포',
+          'Flutter·Gradle 캐싱 전략으로 빌드 시간 최적화 및 배포 프로세스 자동화',
+          'Keystore 암호화 및 GitHub Secrets 기반 보안 처리로 배포 안정성 확보',
+        ],
+      },
+      {
+        title: 'OTA 기반 앱 자동 업데이트 시스템',
+        bullets: [
+          'Google Drive 기반 version.json으로 서버 없이 앱 업데이트 구조 구현',
+          '앱 실행 시 최신 버전 비교 후 업데이트 필요 시 다운로드·설치 유도 설계',
+          'Dio 기반 APK 다운로드 및 설치 자동 실행 로직 구현',
+          '버전 비교 로직 직접 구현으로 업데이트 판단 자동화·유지보수 효율 개선',
+        ],
+      },
+      {
+        title: 'Bluetooth 기반 음성 안내',
+        bullets: [
+          'Bluetooth 디바이스 연동으로 음성 안내 기능 구현',
+          '연결 상태·예외 상황별 사용자 피드백 로직 구현',
+          'TTS(Text-to-Speech)로 실시간 음성 출력 처리',
         ],
       },
     ],
