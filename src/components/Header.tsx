@@ -7,6 +7,7 @@ const nav = [
   { id: 'experience', label: 'Career' },
   { id: 'work', label: 'Career Description' },
   { id: 'education', label: 'Education' },
+  { id: 'credentials', label: 'Credentials' },
   { id: 'connect', label: 'Links' },
 ] as const
 

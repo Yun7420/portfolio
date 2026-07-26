@@ -147,14 +147,15 @@ export function OverviewSection() {
 
         <div className="mt-14 rounded-2xl border border-white/[0.08] bg-zinc-900/35 p-6 ring-1 ring-white/[0.04] sm:p-8">
           <p className="font-sans text-[15px] leading-[1.85] text-zinc-400">
-            기업부설연구소에서 웹·하이브리드 앱 프론트엔드를 담당하며 Next.js·React
-            생태계와 Vue·Ionic·Capacitor 기반 모바일까지 폭넓게 다뤘습니다. 단순
-            구현을 넘어 폴더 구조·상태 관리·다국어·인증 흐름처럼 유지보수와 확장에
-            영향을 주는 부분을 함께 설계하는 일에 집중합니다.
+            기업부설연구소에서 웹·하이브리드·Flutter 앱 프론트엔드를 담당하며,
+            Next.js·React·Vite 생태계부터 Vue·Ionic·Capacitor 모바일, 모노레포·CI/CD·배포
+            인프라까지 폭넓게 다룹니다. 단순 구현을 넘어 Feature 아키텍처·상태 관리·다국어·인증·런타임
+            검증처럼 유지보수와 확장에 영향을 주는 구조를 함께 설계하는 일에 집중합니다.
           </p>
           <p className="font-sans mt-6 text-[15px] leading-[1.85] text-zinc-400">
-            UI/UX·퍼블리싱 출신으로 화면 단의 완성도와 기획·디자인·백엔드와의 정합성을
-            맞추는 협업에 익숙합니다.
+            UI/UX·퍼블리싱 출신으로 화면 완성도와 기획·디자인·백엔드와의 정합성을 맞추는
+            협업에 익숙하며, 개인 프로젝트에서는 공모전 출품작의 프론트엔드 전 영역을
+            단독으로 구축·운영하고 있습니다.
           </p>
         </div>
       </div>

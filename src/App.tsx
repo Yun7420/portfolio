@@ -2,6 +2,7 @@ import { BackgroundMusic } from './components/BackgroundMusic'
 import { Header } from './components/Header'
 import { SiteFooter } from './components/SiteFooter'
 import { ConnectSection } from './components/sections/ConnectSection'
+import { CredentialsSection } from './components/sections/CredentialsSection'
 import { EducationSection } from './components/sections/EducationSection'
 import { ExperienceSection } from './components/sections/ExperienceSection'
 import { ExpertiseSection } from './components/sections/ExpertiseSection'
@@ -18,6 +19,7 @@ function App() {
         <ExperienceSection />
         <WorkSection />
         <EducationSection />
+        <CredentialsSection />
         <ConnectSection />
       </main>
       <SiteFooter />

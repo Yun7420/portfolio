@@ -25,6 +25,9 @@ export function EducationSection() {
                     {e.institution}
                   </p>
                   <p className="font-sans mt-1 text-sm text-zinc-400">{e.program}</p>
+                  {e.note ? (
+                    <p className="font-sans mt-1 text-xs text-zinc-500">{e.note}</p>
+                  ) : null}
                 </div>
                 <p className="font-sans shrink-0 text-xs font-medium uppercase tracking-wider text-sky-500/85 sm:text-right">
                   {e.period}

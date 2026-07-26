@@ -46,6 +46,24 @@ export function WorkSection() {
                       {p.period}
                     </span>
                   </p>
+                  {p.link ? (
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-sans mt-3 inline-flex items-center gap-1.5 text-sm text-sky-400/90 transition hover:text-sky-300"
+                    >
+                      <MaterialIcon
+                        name="link"
+                        className="!text-[16px]"
+                      />
+                      {p.link.replace(/^https?:\/\//, '')}
+                      <MaterialIcon
+                        name="arrow_outward"
+                        className="!text-[14px]"
+                      />
+                    </a>
+                  ) : null}
                 </div>
               </div>
               <p className="font-sans mt-6 border-l-2 border-sky-500/40 pl-4 text-sm leading-relaxed text-zinc-300">
