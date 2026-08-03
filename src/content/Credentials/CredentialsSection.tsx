@@ -1,11 +1,11 @@
-import { credentials } from '../../data/resume'
-import { SectionHeading } from '../SectionHeading'
+import { SectionHeading } from '../../shared/components/SectionHeading'
+import { credentials } from './credentials.data'
 
 export function CredentialsSection() {
   return (
     <section
       id="credentials"
-      className="border-b border-white/[0.06] px-5 py-20 sm:px-8 sm:py-28"
+      className="border-b border-white/6 px-5 py-20 sm:px-8 sm:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeading
@@ -16,7 +16,7 @@ export function CredentialsSection() {
           {credentials.map((c) => (
             <li
               key={`${c.title}-${c.period}`}
-              className="rounded-xl border border-white/[0.08] bg-zinc-900/35 px-5 py-4 sm:px-6 sm:py-5"
+              className="rounded-xl border border-white/8 bg-zinc-900/35 px-5 py-4 sm:px-6 sm:py-5"
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="min-w-0">

@@ -1,12 +1,12 @@
-import { projects } from '../../data/resume'
-import { MaterialIcon } from '../MaterialIcon'
-import { SectionHeading } from '../SectionHeading'
+import { MaterialIcon } from '../../shared/components/MaterialIcon'
+import { SectionHeading } from '../../shared/components/SectionHeading'
+import { projects } from './careerDescription.data'
 
-export function WorkSection() {
+export function CareerDescriptionSection() {
   return (
     <section
-      id="work"
-      className="border-b border-white/[0.06] px-5 py-20 sm:px-8 sm:py-28"
+      id="career-description"
+      className="border-b border-white/6 px-5 py-20 sm:px-8 sm:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeading
@@ -17,7 +17,7 @@ export function WorkSection() {
           {projects.map((p) => (
             <article
               key={p.name}
-              className="rounded-2xl border border-sky-500/10 bg-gradient-to-b from-sky-950/35 via-zinc-900/40 to-[#070b14]/80 p-6 sm:p-10"
+              className="rounded-2xl border border-sky-500/10 bg-linear-to-b from-sky-950/35 via-zinc-900/40 to-surface/80 p-6 sm:p-10"
             >
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <div>
@@ -33,7 +33,7 @@ export function WorkSection() {
                     <span className="inline-flex items-center gap-1">
                       <MaterialIcon
                         name="apartment"
-                        className="!text-[16px] text-sky-500/75"
+                        className="text-[16px]! text-sky-500/75"
                       />
                       {p.client}
                     </span>
@@ -41,7 +41,7 @@ export function WorkSection() {
                     <span className="inline-flex items-center gap-1">
                       <MaterialIcon
                         name="calendar_month"
-                        className="!text-[16px] text-sky-500/75"
+                        className="text-[16px]! text-sky-500/75"
                       />
                       {p.period}
                     </span>
@@ -55,12 +55,12 @@ export function WorkSection() {
                     >
                       <MaterialIcon
                         name="link"
-                        className="!text-[16px]"
+                        className="text-[16px]!"
                       />
                       {p.link.replace(/^https?:\/\//, '')}
                       <MaterialIcon
                         name="arrow_outward"
-                        className="!text-[14px]"
+                        className="text-[14px]!"
                       />
                     </a>
                   ) : null}
@@ -77,7 +77,7 @@ export function WorkSection() {
                   {p.stack.map((row) => (
                     <div
                       key={row.label}
-                      className="rounded-lg border border-white/[0.06] bg-black/20 px-4 py-3"
+                      className="rounded-lg border border-white/6 bg-black/20 px-4 py-3"
                     >
                       <dt className="text-xs text-zinc-600">{row.label}</dt>
                       <dd className="mt-1 text-sm text-zinc-200">{row.value}</dd>

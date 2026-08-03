@@ -1,11 +1,11 @@
-import { educationEntries } from '../../data/resume'
-import { SectionHeading } from '../SectionHeading'
+import { SectionHeading } from '../../shared/components/SectionHeading'
+import { educationEntries } from './education.data'
 
 export function EducationSection() {
   return (
     <section
       id="education"
-      className="border-b border-white/[0.06] px-5 py-20 sm:px-8 sm:py-28"
+      className="border-b border-white/6 px-5 py-20 sm:px-8 sm:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeading
@@ -17,7 +17,7 @@ export function EducationSection() {
           {educationEntries.map((e) => (
             <li
               key={`${e.institution}-${e.period}`}
-              className="w-full rounded-xl border border-white/[0.08] bg-zinc-900/35 px-5 py-4 sm:px-6 sm:py-5"
+              className="w-full rounded-xl border border-white/8 bg-zinc-900/35 px-5 py-4 sm:px-6 sm:py-5"
             >
               <div className="flex w-full flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
                 <div className="min-w-0 flex-1">

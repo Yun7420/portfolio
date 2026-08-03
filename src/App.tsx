@@ -1,29 +1,13 @@
-import { BackgroundMusic } from './components/BackgroundMusic'
-import { Header } from './components/Header'
-import { SiteFooter } from './components/SiteFooter'
-import { ConnectSection } from './components/sections/ConnectSection'
-import { CredentialsSection } from './components/sections/CredentialsSection'
-import { EducationSection } from './components/sections/EducationSection'
-import { ExperienceSection } from './components/sections/ExperienceSection'
-import { ExpertiseSection } from './components/sections/ExpertiseSection'
-import { OverviewSection } from './components/sections/OverviewSection'
-import { WorkSection } from './components/sections/WorkSection'
+import { Content } from './content'
+import { SiteFooter } from './footer'
+import { Header } from './header'
 
 function App() {
   return (
-    <div className="min-h-svh bg-[var(--color-surface)] text-zinc-200">
+    <div className="min-h-svh bg-surface text-zinc-200">
       <Header />
-      <main>
-        <OverviewSection />
-        <ExpertiseSection />
-        <ExperienceSection />
-        <WorkSection />
-        <EducationSection />
-        <CredentialsSection />
-        <ConnectSection />
-      </main>
+      <Content />
       <SiteFooter />
-      <BackgroundMusic />
     </div>
   )
 }
